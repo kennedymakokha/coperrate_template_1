@@ -1,4 +1,3 @@
-import React from 'react'
 
 type Props = {
     label: string
@@ -15,6 +14,7 @@ type Props = {
 }
 function AuthInputBox(props: Props) {
     const { name, showPass, setShowPass, label, placeholder, value, onChange, type, error, min, max } = props
+    console.log(error, min, max)
     return (
         <div className="flex w-full flex-col px-2 ">
             <h2 className="font-bold text-xl text-slate-700 py-2">{label}</h2>

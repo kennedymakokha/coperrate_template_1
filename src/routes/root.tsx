@@ -1,14 +1,13 @@
-import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 
 export default function Root() {
 
-    const [isDark, setIsDark] = useState(false);
+    // const [isDark, setIsDark] = useState(false);
     return (
         // <Navbar />
 
-        <div className={` w-full ${isDark ? 'dark' : ''}  overflow-hidden`}>
+        <div className={` w-full  dark  overflow-hidden`}>
             {/* <Header dark={isDark} handleDarkToggle={() => setIsDark(!isDark)} /> */}
             <Navbar />
             <div className={`flex bg-blackmode-100 dark:bg-slate-200 `} >
