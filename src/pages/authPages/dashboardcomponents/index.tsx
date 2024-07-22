@@ -15,7 +15,7 @@ const index = () => {
         )
     }
     return (
-        <div className="flex sm:h-[600px] h-auto sm:flex-row flex-col w-full sm:px-24">
+        <div className="flex sm:h-[60vh] h-auto sm:flex-row flex-col w-full sm:px-24">
             <div className="flex h-auto sm:w-3/4 sm:px-3 w-full ">
                 <div className="flex h-full relative z-0 w-full rounded-md ">
                     <img src={Dem} alt="" className="sm:hidden " />
