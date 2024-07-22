@@ -11,7 +11,7 @@ export default function Root() {
             {/* <Header dark={isDark} handleDarkToggle={() => setIsDark(!isDark)} /> */}
             <Navbar />
             <div className={`flex bg-blackmode-100 dark:bg-slate-200 `} >
-                <div className={` px-24  min-h-[90vh] relative z-0 w-full`}>
+                <div className={`    min-h-[90vh] relative z-0 w-full`}>
                     <Outlet />
                  
 
