@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { motion } from "framer-motion"
 import Tshirt from './../../../assets/images/pointex/T-Shirt.png'
 import Card from './../../../assets/images/pointex/businesscard.jpg'
@@ -9,6 +9,7 @@ const index = () => {
     }
     const Button = (props: Props) => {
         const { title, onclick, outline } = props
+        console.log(onclick)
         return (
             <div className={`flex shadow-3xl ${outline ? "border border-secondary-100 hover:bg-slate-200 hover:text-secondary-100 sm:text-black text-white" : "sm:text-white text-black bg-secondary-100  hover:bg-black hover:text-secondary-100"} px-4 py-2 font-bold  rounded-md`}>{title}</div>
         )

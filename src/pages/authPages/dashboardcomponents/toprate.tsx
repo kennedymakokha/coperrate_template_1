@@ -5,7 +5,7 @@ import Texture1 from './../../../assets/images/pointex/back2.jpg'
 import { useRef } from 'react'
 type itemDetailProp = {
     title: string,
-    bg: string
+    bg: any
 }
 const CardDetailItem = (props: itemDetailProp) => {
     return (
@@ -28,7 +28,7 @@ const CardDetailItem = (props: itemDetailProp) => {
 }
 type cardItemProps = {
     img: string
-    bg: boolean
+    bg: any
     back: any
     arr: any
 }
