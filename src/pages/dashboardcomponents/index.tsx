@@ -1,8 +1,10 @@
 
 import { motion } from "framer-motion"
-import Tshirt from './../../../assets/images/pointex/T-Shirt.png'
-import Card from './../../../assets/images/pointex/businesscard.jpg'
-import Dem from './../../../assets/images/pointex/dem.png'
+import Tshirt from './../../assets/images/pointex/T-Shirt.png'
+import Card from './../../assets/images/pointex/businesscard.jpg'
+import Dem from './../../assets/images/pointex/dem.png'
+import Bg from './../../assets/images/pointex/Shape-Background-5.png'
+
 const index = () => {
     type Props = {
         title: string, onclick: any, outline: boolean
@@ -18,7 +20,7 @@ const index = () => {
         <div className="flex sm:h-[60vh] h-auto sm:flex-row flex-col w-full sm:px-24">
             <div className="flex h-auto sm:w-3/4 sm:px-3 w-full ">
                 <div className="flex h-full relative z-0 w-full rounded-md ">
-                    <img src={Dem} alt="" className="sm:hidden " />
+                    <img src={Bg} alt="" className=" " />
                     <motion.img
                         initial={{
                             x: 250,
@@ -48,7 +50,7 @@ const index = () => {
                         </div>
 
                     </div>
-                    <div className="absolute inset-0 flex opacity-70 rounded-md  bg-orange-900 z-10"></div>
+                    <div className="absolute inset-0 flex opacity-40 rounded-md  bg-orange-900 z-10"></div>
                 </div>
             </div>
             <motion.div

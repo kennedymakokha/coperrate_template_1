@@ -1,5 +1,5 @@
 
-import Dashboard from './pages/authPages/dashboard'
+import Dashboard from './pages/dashboard'
 function App() {
 
 

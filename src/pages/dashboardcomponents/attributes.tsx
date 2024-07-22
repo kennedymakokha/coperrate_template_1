@@ -15,7 +15,7 @@ const Item = (props: Prop) => {
   })
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1])
   const { title, icon, description } = props
-  console.log(props)
+ 
   return (
     <motion.div style={{
       scale: scaleProgress, opacity: scrollYProgress

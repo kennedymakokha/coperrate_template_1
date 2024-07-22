@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import TotBag from './../../../assets/images/pointex/T-Shirt.png'
-import Texture from './../../../assets/images/pointex/texture.jpg'
-import Texture1 from './../../../assets/images/pointex/back2.jpg'
+import TotBag from './../../assets/images/pointex/T-Shirt.png'
+import Texture from './../../assets/images/pointex/texture.jpg'
+import Texture1 from './../../assets/images/pointex/back2.jpg'
 import { useRef } from 'react'
 type itemDetailProp = {
     title: string,
@@ -10,7 +10,7 @@ type itemDetailProp = {
 const CardDetailItem = (props: itemDetailProp) => {
     return (
 
-        <div className={` px-4 flex items-center justify-between border-b ${props.bg ? "border-slate-100" : "border-slate-400"}   w-full h-1/3 `}>
+        <div className={` px-4 flex items-center justify-between border-b ${props.bg ? "border-slate-100" : "border-slate-400"}   w-full sm:h-1/3 h-[50px] `}>
             <div className={`w-3/4  flex items-center ${props.bg && "text-slate-200"} font-bold text-xl h-full `}>
                 {props.title}
             </div>
@@ -36,7 +36,7 @@ const CardItem = (props: cardItemProps) => {
     return (
 
         <div className="  flex  py-4 w-full h-full ">
-            <div className={`w-1/2 px-2  h-full`}>
+            <div className={`w-1/2 px-2 sm:flex hidden  h-full`}>
                 <motion.img
                     initial={{
                         // x: 250,
@@ -58,7 +58,7 @@ const CardItem = (props: cardItemProps) => {
                     // viewport={{ once: true }}
                     src={props.img} className={` ${props.bg ? " " : "  border-[0.1px] border-secondary-100"}   rounded-md`} alt="" />
             </div>
-            <div className="w-1/2  flex flex-col h-full ">
+            <div className="sm:w-1/2 w-full  flex flex-col h-full ">
                 {props.arr.map((item: string) => (
                     <CardDetailItem bg={props.bg} key={item} title={item} />
                 ))}
@@ -88,7 +88,7 @@ const Item = (props: Props) => {
 
         <motion.div style={{
             scale: scaleProgress, opacity: scrollYProgress
-        }} ref={ref} className="flex w-1/2 sm:px-2" >
+        }} ref={ref} className="flex sm:w-1/2 w-full  sm:min-h-[200px] min-h-[500px] sm:px-2" >
             <div className="  border rounded-md   w-full h-full relative z-0">
                 <img src={props.back} className='h-full w-full rounded-md' alt="" />
                 <div className="absolute inset-0 flex flex-col p-10 z-20">
@@ -114,8 +114,8 @@ const Item = (props: Props) => {
 const Toprate = () => {
 
     return (
-        <div className='w-full sm:px-24 mt-10 h-[400px]'>
-            <div className="flex w-full h-full">
+        <div className='w-full sm:px-24 mt-10 sm:h-[400px] h-auto'>
+            <div className="flex w-full sm:flex-row flex-col h-full">
                 <Item list={[
                     "Tote Bags",
                     "Business Cards",
