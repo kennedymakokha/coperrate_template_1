@@ -14,12 +14,12 @@ const Navbar = () => {
     // Array containing navigation items
 
     const navItems = [
-        { id: 1, url: "/", text: 'Home' },
-        { id: 2, url: "/about-us", text: 'About Us' },
-        { id: 3, url: "/services", text: 'Services' },
-        { id: 4, url: "/projects", text: 'Projects' },
-        { id: 5, url: "/pricing", text: 'Pricing' },
-        { id: 6, url: "/contact-Us", text: 'Contact Us' },
+        { id: 1, url: "", text: 'Home' },
+        { id: 2, url: "about-us", text: 'About Us' },
+        { id: 3, url: "services", text: 'Services' },
+        { id: 4, url: "projects", text: 'Projects' },
+        { id: 5, url: "pricing", text: 'Pricing' },
+        { id: 6, url: "contact-us", text: 'Contact Us' },
     ];
     function UseLastPathname(pos: number) {
         const location = useLocation();
@@ -27,6 +27,7 @@ const Navbar = () => {
         return pathSegments[pathSegments.length - pos];
     }
     let path = UseLastPathname(1)
+
     return (
         <div className='bg-black flex justify-between items-center h-24  mx-auto px-24 text-white'>
             {/* Logo */}
@@ -37,9 +38,9 @@ const Navbar = () => {
                 {navItems.map(item => (
                     <li
                         key={item.id}
-                        className='px-4 py-2 hover:bg-secondary-100 min-w-24 w-auto rounded-xl m-2 cursor-pointer duration-300 '
+                        className={`px-1 flex items-center justify-center py-2 hover:bg-secondary-100 ${path === item.url ? "text-black bg-secondary-100" : ""}  min-w-24 w-auto rounded-xl m-2 cursor-pointer duration-300`}
                     >
-                        <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-white  " : "text-slate-200 dark:text-black hover:text-black"}  `}>{item.text} </Link>
+                        <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-black bg-secondary-100 " : "text-slate-200 dark:text-black hover:text-black"}  `}>{item.text} </Link>
                     </li>
                 ))}
             </ul>

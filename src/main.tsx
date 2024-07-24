@@ -8,6 +8,11 @@ import App from './App.tsx'
 import './index.css'
 import Root from './routes/root.tsx';
 import ErrorPage from './error-page.tsx';
+import About from './pages/about.tsx';
+import Services from './pages/services.tsx';
+import Projects from './pages/projects.tsx';
+import Contacts from './pages/contacts.tsx';
+import Pricing from './pages/pricing.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,24 +23,28 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
       },
-      // {
-      //   path: "services",
-      //   element: <Services />,
-      // },
-      // {
-      //   path: "about-us",
-      //   element: <About />,
-      // },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "about-us",
+        element: <About />,
+      },
 
-      // {
-      //   path: "contact-us",
-      //   element: <Contact />,
-      // },
+      {
+        path: "contact-us",
+        element: <Contacts />,
+      },
 
-      // {
-      //   path: "projects",
-      //   element: <Project />,
-      // },
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "pricing",
+        element: <Pricing />,
+      },
       // {
       //   path: "projects/:name",
       //   element: <ProjectDetails />,
@@ -43,7 +52,7 @@ const router = createBrowserRouter([
 
     ],
   },
-  
+
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
