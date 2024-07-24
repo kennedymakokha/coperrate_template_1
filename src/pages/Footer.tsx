@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <div className="w-full my-0 bg-black ">
-            <div className="w-full sm:h-[50vh] h-[14vh]  bg-black flex-col flex items-center justify-center ">
+            <div className="w-full sm:h-[50vh] h-[14vh]  bg-black flex-col sm:flex hidden items-center justify-center ">
                 <div className="flex h-full w-full sm:flex-row flex-col sm:px-24 px-2  my-10">
                     <div className="flex sm:w-[40%] w-full h-full">
                         <Title title="" />
@@ -73,7 +73,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="flex w-full h-10 bg-secondary-100"></div>
+            <div className="flex w-full h-4 bg-slate-500"></div>
 
         </div>
     )

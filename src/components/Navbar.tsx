@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
-
+import img from './../assets/images/pointex/96.png'
 const Navbar = () => {
     // State to manage the navbar's visibility
     const [nav, setNav] = useState(false);
@@ -36,12 +36,18 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <ul className='hidden md:flex w-[98%]'>
                 {navItems.map(item => (
-                    <li
-                        key={item.id}
-                        className={`px-1 flex items-center justify-center py-2 hover:bg-secondary-100 ${path === item.url ? "text-black bg-secondary-100" : ""}  min-w-24 w-auto rounded-xl m-2 cursor-pointer duration-300`}
+                    <Link to={`/${item.url}`} key={item.id} className={`relative z-50 flex items-center justify-center  ${path !== item.url && "hover:bg-secondary-100 "} min-w-24 w-auto rounded-md m-2 cursor-pointer duration-300`}
+                    // className="w-full h-full   flex-col flex items-center justify-center relative z-0"
                     >
-                        <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-black bg-secondary-100 " : "text-slate-200 dark:text-black hover:text-black"}  `}>{item.text} </Link>
-                    </li>
+                        <img src={img} alt="" className={`w-full  ${path === item.url ? "flex h-6 rounded-md border border-slate-900" : "hidden"}  object-cover`} />
+                        <div className="absolute inset-0 flex justify-center items-center z-10">
+
+                            <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-secondary-100   " : "text-slate-200 dark:text-black hover:text-black"}  `}>{item.text} </Link>
+
+                        </div>
+
+                    </Link>
+
                 ))}
             </ul>
 

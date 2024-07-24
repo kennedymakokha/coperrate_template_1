@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "../pages/Footer";
+import Subscribe from "../pages/dashboardcomponents/subscribe";
 
 export default function Root() {
 
@@ -16,6 +17,7 @@ export default function Root() {
                     <Outlet />
                 </div>
             </div>
+            <Subscribe />
             <Footer />
         </div>
     );

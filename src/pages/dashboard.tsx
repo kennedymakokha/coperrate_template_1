@@ -6,7 +6,6 @@ import Attribute from "./dashboardcomponents/attributes"
 import Toprate from "./dashboardcomponents/toprate"
 import Services from './dashboardcomponents/services'
 import Stats from './dashboardcomponents/stats'
-import Subscribe from './dashboardcomponents/subscribe'
 function Dashboard() {
 
 
@@ -17,7 +16,7 @@ function Dashboard() {
             <Toprate />
             <Services />
             <Stats />
-            <Subscribe />
+          
         </div>
     )
 }
