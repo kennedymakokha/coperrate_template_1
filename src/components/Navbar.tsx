@@ -29,7 +29,7 @@ const Navbar = () => {
     let path = UseLastPathname(1)
 
     return (
-        <div className='bg-black flex justify-between items-center h-24  mx-auto px-24 text-white'>
+        <div className='bg-black flex justify-between items-center h-10 shadow-3xl  mx-auto px-24 text-white'>
             {/* Logo */}
             <h1 className='w-full text-3xl font-bold text-secondary-100'>Pointex.</h1>
 

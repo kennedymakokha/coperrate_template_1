@@ -26,7 +26,7 @@ const Banner = (props: Props) => {
                 duration: 0.5,
                 ease: "easeIn",
                 times: [0, 0.2, 0.4, 0.6, 0.8, 1]
-            }} className="w-full h-[40vh] sm:px-0 px-2  flex-col flex items-center justify-center ">
+            }} className="w-full h-[40vh] sm:px-0 px-2   flex-col flex items-center justify-center ">
             
                 <h1 className="text-secondary-100 uppercase">{title}</h1>
                 <h1 className="text-4xl text-center font-bold">

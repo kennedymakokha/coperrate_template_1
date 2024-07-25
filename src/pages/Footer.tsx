@@ -73,7 +73,9 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="flex w-full h-4 bg-slate-500"></div>
+            <div className="flex w-full h-10 py-2 text-secondary-100">
+                © 2024 pointex. All rights reserved.
+            </div>
 
         </div>
     )
