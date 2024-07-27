@@ -22,7 +22,7 @@ export default {
           950: '#0C1312',
         },
         secondary: {
-          100: "#ffa500"
+          100: "#e37021"
         },
 
         default: {

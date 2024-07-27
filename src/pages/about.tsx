@@ -18,8 +18,8 @@ const Item = (props: Props) => {
                 <h2 className="font-semibold ">{title}</h2>
                 <p className="text-slate-500">{desc}</p>
                 <div onClick={() => setShow(true)} className="flex font-semibold cursor-pointer text-[18px] items-center text-secondary-100 group">
-                    Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" className="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.0" stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>
 
                 </div>
@@ -41,8 +41,8 @@ const Modal = (props: ModalProp) => {
     return (
         <div className="absolute  min-h-full sm:w-[40vw] w-full flex  justify-center items-center z-20">
             <div onClick={() => setShow(false)} className="absolute cursor-pointer  h-5 right-2 top-5 w-5 rounded-full flex justify-center items-center z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-6 text-secondary-100">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-6 text-secondary-100">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
 
             </div>

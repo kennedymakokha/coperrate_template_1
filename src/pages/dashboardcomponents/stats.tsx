@@ -38,7 +38,7 @@ const CountUpAnimation = (props: countProps) => {
     return (
         <div className="flex h-full w-1/4 flex-col items-center justify-center ">
             <div className="icon">{iconComponent}</div>
-            <span className="num sm:text-7xl text-secondary-100 font-bold">{count}</span>
+            <span className="num sm:text-4xl text-secondary-100 font-bold">{count}</span>
             <span className="text-white font-bold text-center sm:text-3xl ">{text}</span>
         </div>
     );

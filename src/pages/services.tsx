@@ -22,8 +22,8 @@ const Item = (props: Props) => {
             <div className="flex h-full w-full shrink-0 bg-slate-200 p-10 gap-3 m  rounded-md flex-col">
                 <div className="flex size-16    ">
                     <div className="flex size-14 bg-white rounded-md items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-secondary-100">
-                            <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-secondary-100">
+                            <path strokeLinecap="round" strokeLinejoin="round" d={icon} />
                         </svg>
 
                     </div>
@@ -40,8 +40,8 @@ const Item = (props: Props) => {
                 </motion.h2>
                 <p className="">{desc}</p>
                 <div className="flex font-semibold cursor-pointer text-[18px] items-center  text-secondary-100 group">
-                    Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" className="size-6 pt-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.0" stroke="currentColor" className="size-6 pt-1">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>
 
                 </div>

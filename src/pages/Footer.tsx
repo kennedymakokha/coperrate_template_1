@@ -1,3 +1,4 @@
+import { Logowd } from "../images"
 
 type Props = {
     title: string
@@ -20,8 +21,8 @@ type LinkProps = {
 const Link = (props: LinkProps) => {
     return (
         <div className="flex items-center px-2  h-10 w-full">
-            {props.link && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="text-white size-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            {props.link && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="text-white size-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>}
 
             <h2 className="font-bold text-white ">{props.title}</h2>
@@ -35,10 +36,17 @@ const Footer = () => {
         <div className="w-full my-0 bg-black ">
             <div className="w-full sm:h-[50vh] h-[14vh]  bg-black flex-col sm:flex hidden items-center justify-center ">
                 <div className="flex h-full w-full sm:flex-row flex-col sm:px-24 px-2  my-10">
-                    <div className="flex sm:w-[40%] w-full h-full">
-                        <Title title="" />
+                    <div className="flex sm:w-[25%] w-full flex-col h-full">
+                        {/* <Title title="" /> */}
+                        <div className="flex items-center w-full h-full flex-col justify-center">
+                            <img src={Logowd} alt="" className="flex  h-44 w-44" />
+                            <h2 className="text-secondary-100 font-bold ">
+                                Pointex Solutions
+                            </h2>
+                        </div>
+
                     </div>
-                    <div className="flex sm:w-[20%] w-full flex-col h-full">
+                    <div className="flex sm:w-[25%] w-full flex-col h-full">
                         <Title title="Company" />
 
                         {["About Us",
@@ -48,7 +56,7 @@ const Footer = () => {
                                 <Link link="i" title={item} key={item} />
                             ))}
                     </div>
-                    <div className="flex sm:w-[20%] w-full flex-col h-full">
+                    <div className="flex sm:w-[25%] w-full flex-col h-full">
                         <Title title="Resources" />
 
                         {
@@ -60,7 +68,7 @@ const Footer = () => {
                                 ))
                         }
                     </div>
-                    <div className="flex sm:w-[20%] w-full h-full flex-col border-secondary-100 border-dotted ">
+                    <div className="flex sm:w-[25%] w-full h-full flex-col border-secondary-100 border-dotted ">
                         <Title title="Help" />
                         {["Customer Support",
                             " Delivery Details",

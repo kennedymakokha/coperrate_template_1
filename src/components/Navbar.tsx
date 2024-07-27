@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
 import img from './../assets/images/pointex/96.png'
+import { LogoLn } from '../images';
 const Navbar = () => {
     // State to manage the navbar's visibility
     const [nav, setNav] = useState(false);
@@ -29,9 +30,12 @@ const Navbar = () => {
     let path = UseLastPathname(1)
 
     return (
-        <div className='bg-black flex justify-between items-center h-10 shadow-3xl  mx-auto px-24 text-white'>
+        <div className='bg-black flex justify-between items-center h-20 shadow-3xl  mx-auto px-24 text-white'>
             {/* Logo */}
-            <h1 className='w-full text-3xl font-bold text-secondary-100'>Pointex.</h1>
+            {/* <h1 className='w-full text-3xl font-bold text-secondary-100'>Pointex.</h1> */}
+            <div className="w-full h-full">
+                <img src={LogoLn} alt="" className="h-full" />
+            </div>
 
             {/* Desktop Navigation */}
             <ul className='hidden md:flex w-[98%]'>
