@@ -18,7 +18,7 @@ const Item = (props: Props) => {
         icon,
         desc, } = props
     return (
-        <div className="flex w-1/3 h-[300px] group px-1 mb-2  " >
+        <div className="flex sm:w-1/3 h-[300px] group px-1 mb-2  " >
             <div className="flex h-full w-full shrink-0 bg-slate-200 p-10 gap-3 m  rounded-md flex-col">
                 <div className="flex size-16    ">
                     <div className="flex size-14 bg-white rounded-md items-center justify-center">

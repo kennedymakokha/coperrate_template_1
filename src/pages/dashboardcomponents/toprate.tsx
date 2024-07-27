@@ -88,9 +88,9 @@ const Item = (props: Props) => {
 
         <motion.div style={{
             scale: scaleProgress, opacity: scrollYProgress
-        }} ref={ref} className="flex sm:w-1/2 w-full  sm:min-h-[200px] min-h-[500px] sm:px-2" >
-            <div className="  border rounded-md   w-full h-full relative z-0">
-                <img src={props.back} className='h-full w-full rounded-md' alt="" />
+        }} ref={ref} className="flex sm:w-1/2 w-full  sm:min-h-[200px] min-h-[400px] sm:px-2" >
+            <div className="  border rounded-md   sm:min-h-[200px] min-h-[400px] w-full h-full relative z-0">
+                <img src={props.back} className='h-full w-full  sm:min-h-[200px] min-h-[400px] rounded-md' alt="" />
                 <div className="absolute inset-0 flex flex-col p-10 z-20">
                     <h2 className={`font-bold text-3xl ${props.bg ? "text-secondary-100" : "text-secondary-100"}`}>{props.title}</h2>
                     <p className={`${props.bg ? "text-white" : ""} text-[18px]`}>Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae</p>

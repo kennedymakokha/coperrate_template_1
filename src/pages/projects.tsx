@@ -9,6 +9,7 @@ function Projects() {
   const [active, setActive] = useState('')
 
   const handleTab = (title: string) => {
+    console.log(title)
     let newTab: any = []
     tabs.forEach(tab => {
       if (tab.title.toLowerCase() === title.toLowerCase()) {
@@ -51,7 +52,7 @@ function Projects() {
           duration: 0.5,
           ease: "easeIn",
           // times: [0, 0.2, 0.4, 0.6, 0.8, 1]
-        }} className=" h-40 w-[13.5%] rounded-md  bg-secondary-100 relative z-0">
+        }} className=" sm:h-40 sm:w-[13.5%] w-full rounded-md  bg-secondary-100 relative z-0">
         <img src={img} alt="" className="w-full h-full object-fit rounded-md" />
         <div className="absolute h-10 w-full bottom-0 flex justify-center items-center z-20">
           <p className=" font-bold text-secondary-100">{title}</p>

@@ -30,11 +30,11 @@ const Navbar = () => {
     let path = UseLastPathname(1)
 
     return (
-        <div className='bg-black flex justify-between items-center h-20 shadow-3xl  mx-auto px-24 text-white'>
+        <div className='bg-black  flex justify-between items-center sm:h-20 h-10 shadow-3xl  mx-auto sm:px-24 px-2 text-white'>
             {/* Logo */}
-            {/* <h1 className='w-full text-3xl font-bold text-secondary-100'>Pointex.</h1> */}
+            <h1 className='sm:hidden flex w-full text-xl font-bold text-secondary-100'>Pointex solutions </h1>
             <div className="w-full h-full">
-                <img src={LogoLn} alt="" className="h-full" />
+                <img src={LogoLn} alt="" className="sm:flex hidden h-full" />
             </div>
 
             {/* Desktop Navigation */}
@@ -56,7 +56,7 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile Navigation Icon */}
-            <div onClick={handleNav} className='block md:hidden'>
+            <div onClick={handleNav} className='block md:hidden '>
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
 

@@ -13,7 +13,7 @@ const index = () => {
         const { title, onclick, outline } = props
         console.log(onclick)
         return (
-            <div className={`flex shadow-3xl ${outline ? "border border-secondary-100 hover:bg-slate-200 hover:text-secondary-100 sm:text-black text-white" : "sm:text-white text-black bg-secondary-100  hover:bg-black hover:text-secondary-100"} px-4 py-2 font-bold  rounded-md`}>{title}</div>
+            <div className={`flex shadow-3xl ${outline ? "border border-secondary-100 hover:bg-slate-200 hover:text-secondary-100 sm:text-black text-white" : "sm:text-white text-black bg-secondary-100  hover:bg-black hover:text-secondary-100"} px-4 py-2 font-bold sm:text-[14px] text-[10px]  rounded-md`}>{title}</div>
         )
     }
     return (

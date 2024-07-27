@@ -5,6 +5,13 @@
 // import TitleContainer from './titleContainer'
 
 function Tab(props: any) {
+    const onOptionChangeHandler = (e: any) => {
+        props.onChange(e.target.value);
+        console.log(
+            "User Selected Value - ",
+            e.target.value
+        );
+    };
     return (
         <div className='p-1 mb-4 w-full'>
             <div className='sm:flex hidden h-10 gap-x-1 w-full '>
@@ -17,14 +24,14 @@ function Tab(props: any) {
                 ))}
             </div>
 
-            {/* <div className='w-auto sm:hidden flex   '>
-                <select onChange={() => props.onChange(menu.title)} className='h-10 w-auto capitalize flex items-center text-[20px] px-2 text-primary-100 font-semi-bold  rounded-sm shadow-[inset_-12px_-8px_40px_#46464620]'>
-                    {props.data.map((sub:any, i:number) => (
-                        <option value={sub.title}  key={i}>{sub.title}</option>
+            <div className='w-auto sm:hidden flex   '>
+                <select onChange={e => onOptionChangeHandler(e)} className='h-10 w-auto bg-secondary-100 capitalize flex items-center text-[20px] px-2 text-primary-100 font-semi-bold  rounded-sm shadow-[inset_-12px_-8px_40px_#46464620]'>
+                    {props.data.map((sub: any, i: number) => (
+                        <option value={sub.title} key={i}>{sub.title}</option>
                     ))
                     }
                 </select>
-            </div> */}
+            </div>
         </div>
     )
 }

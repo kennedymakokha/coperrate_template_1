@@ -13,7 +13,7 @@ const Item = (props: Props) => {
     const { title, img, desc, setShow } = props
     return (
         <div className="flex   sm:w-1/3 w-full h-full    sm:px-10 flex-col">
-            <img src={img} alt="" className="flex h-[150px]  object-fit rounded-md shadow-" />
+            <img src={img} alt="" className="flex sm:h-[150px] h-[200px]  object-fit rounded-md " />
             <div className="flex flex-col h-[40%] gap-x-2 w-full border-b">
                 <h2 className="font-semibold ">{title}</h2>
                 <p className="text-slate-500">{desc}</p>
