@@ -8,12 +8,8 @@ import Services from './dashboardcomponents/services'
 import Stats from './dashboardcomponents/stats'
 
 function Dashboard() {
-
-
     return (
         <div className='w-full  flex flex-col  sm:pt-10 py-0'>
-
-       
             <Main />
             <Attribute />
             <Toprate />

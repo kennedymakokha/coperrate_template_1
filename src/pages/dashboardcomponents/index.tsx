@@ -2,8 +2,8 @@
 import { motion } from "framer-motion"
 import Tshirt from './../../assets/images/pointex/T-Shirt.png'
 import Card from './../../assets/images/pointex/businesscard.jpg'
-import Dem from './../../assets/images/pointex/dem.png'
-import Bg from './../../assets/images/pointex/Shape-Background-5.png'
+import Dem from './../../assets/images/pointex/dem1.png'
+import Bg from './../../assets/images/pointex/WhatsApp Image 2024-07-25 at 23.20.24.jpeg'
 
 const index = () => {
     type Props = {
@@ -23,7 +23,7 @@ const index = () => {
                     <img src={Bg} alt="" className=" " />
                     <motion.img
                         initial={{
-                            x: 250,
+                            x: 150,
                             // opacity: 0,
                             // scale: 0
                         }}
@@ -38,9 +38,9 @@ const index = () => {
                             ease: "easeIn",
                             // times: [0, 0.2, 0.4, 0.6, 0.8, 1]
                         }}
-                        src={Dem} alt="" className="absolute h-full w-1/2 right-0  sm:flex hidden  z-20 object-cover" />
+                        src={Dem} alt="" className="absolute h-full w-[69.9%] right-0  sm:flex hidden  z-20 object-cover" />
                     <div className="absolute h-full sm:gap-y-10   gap-y-4 sm:w-[65%] w-full flex-col items-center justify-center left-0   flex  z-20 object-cover" >
-                        <h2 className="text-center sm:text-black text-white text-3xl font-bold">PRINTING SERVICE COMPANY</h2>
+                        <h2 className="text-center sm:text-black text-white text-3xl font-bold"></h2>
                         <h1 className="text-secondary-100 text-3xl font-bold">Show Up, Stand Out!</h1>
                         <p className="sm:text-black text-white">Bring Your Ideas to Life with High-Quality Prints</p>
                         <div className="flex gap-x-3">
@@ -50,7 +50,25 @@ const index = () => {
                         </div>
 
                     </div>
-                    <div className="absolute inset-0 flex opacity-40 rounded-md  bg-orange-900 z-10"></div>
+                    <motion.div
+
+                        initial={{
+                            // x: 150,
+                            // opacity: 1,
+                            scale: 1
+                        }}
+                        animate={{
+                            // x: 0,
+                            scale: 0,
+                            // opacity: [0, 0.2, 0.4, 0.6, 0.8, 1]
+
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            ease: "easeIn",
+                            // times: [0, 0.2, 0.4, 0.6, 0.8, 1]
+                        }}
+                        className="absolute inset-0 flex opacity-40 rounded-md  bg-secondary-100 z-10"></motion.div>
                 </div>
             </div>
             <motion.div
