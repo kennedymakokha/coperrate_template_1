@@ -17,7 +17,7 @@ function Tab(props: any) {
             <div className='sm:flex hidden h-10 gap-x-1 w-full '>
                 {props.data.map((menu: any, i: number) => (
                     <div key={i} className={`h-full w-full rounded-md  text-slate-100 `}>
-                        <div onClick={() => props.onChange(menu.title)} className={`h-full capitalize font-semibold  text-[15px] rounded-md w-full p-1 drop-shadow-md flex items-center justify-center  ${menu.state === true ? "bg-black text-primary-100" : "bg-secondary-100 text-black"} `}>
+                        <div onClick={() => props.onChange(menu.title)} className={`h-full capitalize font-semibold  text-[15px] rounded-md w-full p-1 drop-shadow-md flex items-center justify-center  ${menu.state === true ? "text-primary-100" : " text-white"} `}>
                             {menu.title}
                         </div>
                     </div>

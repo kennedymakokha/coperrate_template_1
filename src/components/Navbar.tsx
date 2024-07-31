@@ -78,7 +78,7 @@ const Navbar = () => {
                         key={item.id}
                         className='p-4 border-b rounded-xl hover:bg-secondary-100 duration-300 hover:text-black cursor-pointer border-secondary-100/[40%]'
                     >
-                        <Link to={`/${item.url}`} className={`font-semibold capitalize  ${path === item.url ? "text-secondary-100/[65%]  " : "text-slate-400 dark:text-black hover:text-orange-400"}  `}>{item.text} </Link>
+                        <Link to={`/${item.url}`} className={`font-semibold capitalize  ${path === item.url ? "text-secondary-100/[65%]  " : "text-slate-100 "}  `}>{item.text} </Link>
 
                     </li>
                 ))}
