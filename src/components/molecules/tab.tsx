@@ -25,7 +25,7 @@ function Tab(props: any) {
             </div>
 
             <div className='w-auto sm:hidden flex   '>
-                <select onChange={e => onOptionChangeHandler(e)} className='h-10 w-auto bg-secondary-100 capitalize flex items-center text-[20px] px-2 text-primary-100 font-semi-bold  rounded-sm shadow-[inset_-12px_-8px_40px_#46464620]'>
+                <select onChange={e => onOptionChangeHandler(e)} className='h-10 w-auto bg-secondary-100/[30%] capitalize flex items-center text-[20px] px-2 text-black font-semi-bold  rounded-sm shadow-[inset_-12px_-8px_40px_#46464620]'>
                     {props.data.map((sub: any, i: number) => (
                         <option value={sub.title} key={i}>{sub.title}</option>
                     ))

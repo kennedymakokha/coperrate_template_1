@@ -69,15 +69,16 @@ const Navbar = () => {
                 }
             >
                 {/* Mobile Logo */}
-                <h1 className='w-full text-3xl font-bold text-secondary-100 m-4'>Pointex</h1>
+
+                <img src={LogoLn} alt="" />
 
                 {/* Mobile Navigation Items */}
                 {navItems.map(item => (
                     <li
                         key={item.id}
-                        className='p-4 border-b rounded-xl hover:bg-secondary-100 duration-300 hover:text-black cursor-pointer border-gray-600'
+                        className='p-4 border-b rounded-xl hover:bg-secondary-100 duration-300 hover:text-black cursor-pointer border-secondary-100/[40%]'
                     >
-                        <Link to={`/${item.url}`} className={`font-semibold capitalize  ${path === item.url ? "text-white  " : "text-slate-400 dark:text-black hover:text-orange-400"}  `}>{item.text} </Link>
+                        <Link to={`/${item.url}`} className={`font-semibold capitalize  ${path === item.url ? "text-secondary-100/[65%]  " : "text-slate-400 dark:text-black hover:text-orange-400"}  `}>{item.text} </Link>
 
                     </li>
                 ))}
