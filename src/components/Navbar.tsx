@@ -19,7 +19,7 @@ const Navbar = () => {
         { id: 2, url: "about-us", text: 'About Us' },
         { id: 3, url: "services", text: 'Services' },
         { id: 4, url: "projects", text: 'Projects' },
-        { id: 5, url: "pricing", text: 'Pricing' },
+        // { id: 5, url: "pricing", text: 'Pricing' },
         { id: 6, url: "contact-us", text: 'Contact Us' },
     ];
     function UseLastPathname(pos: number) {

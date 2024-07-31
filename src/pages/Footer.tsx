@@ -33,8 +33,8 @@ const Link = (props: LinkProps) => {
 const Footer = () => {
 
     return (
-        <div className="w-full my-0 bg-black ">
-            <div className="w-full sm:h-[50vh] h-[14vh]  bg-black flex-col sm:flex hidden items-center justify-center ">
+        <div className="w-full my-0 py-4 bg-black ">
+            <div className="w-full sm:h-[30vh] h-[14vh]  bg-black flex-col sm:flex hidden items-center justify-center ">
                 <div className="flex h-full w-full sm:flex-row flex-col sm:px-24 px-2  my-10">
                     <div className="flex sm:w-[25%] w-full flex-col h-full">
                         {/* <Title title="" /> */}
@@ -52,7 +52,7 @@ const Footer = () => {
                         {["About Us",
                             "Services",
                             "Our Projects",
-                            "Pricing"].map((item: string) => (
+                           ].map((item: string) => (
                                 <Link link="i" title={item} key={item} />
                             ))}
                     </div>
@@ -63,7 +63,7 @@ const Footer = () => {
                             ["Gift Cards",
                                 " Design Tutorial",
                                 " How to - Blog",
-                                " Spotify Podcast"].map((item: string) => (
+                                ].map((item: string) => (
                                     <Link link="" title={item} key={item} />
                                 ))
                         }
@@ -71,7 +71,7 @@ const Footer = () => {
                     <div className="flex sm:w-[25%] w-full h-full flex-col border-secondary-100 border-dotted ">
                         <Title title="Help" />
                         {["Customer Support",
-                            " Delivery Details",
+                           
                             "Terms & Conditions",
                             "Privacy Policy"].map((item: string) => (
                                 <Link link="" title={item} key={item} />
