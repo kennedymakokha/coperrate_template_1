@@ -30,8 +30,8 @@ const Item = (props: Prop) => {
           </div>
         </div>
         <div className="flex  flex-col px-2 w-3/4 ">
-          <h2 className="font-bold text-secondary-100 text-2xl">{title}</h2>
-          <p className="text-slate-500">{description}</p>
+          <h2 className="font-bold text-secondary-100 md:text-xl text-2xl">{title}</h2>
+          <p  className="text-slate-500 ">{description}</p>
         </div>
       </div>
     </motion.div>
@@ -45,7 +45,7 @@ const attributes = [
 ]
 const Attribute = () => {
   return (
-    <div className='w-full flex sm:px-24  sm:h-[200px] justify-center py-2 sm:flex-row flex-col  items-center sm:border-b border-secondary-100'>
+    <div className='w-full flex lg:px-24 md:px-4  sm:h-[200px] justify-center py-2 sm:flex-row flex-col  items-center sm:border-b border-secondary-100'>
       {attributes.map(item => (
         <Item key={item.title} title={item.title} icon={item.icon} description={item.description} />
       ))}

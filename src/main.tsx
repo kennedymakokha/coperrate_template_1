@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import App from './App.tsx'
 import './index.css'
+import "./assets/fonts/Causten-Round/Causten-Black.otf";
 import Root from './routes/root.tsx';
 import ErrorPage from './error-page.tsx';
 import About from './pages/about.tsx';

@@ -114,11 +114,11 @@ const Item = (props: Props) => {
 const Toprate = () => {
 
     return (
-        <div className='w-full sm:px-24 mt-10 sm:h-[400px] h-auto'>
+        <div className='w-full sm:px-24 md:px-2 mt-10 sm:h-[400px] md:h-[400px] h-auto'>
             <div className="flex w-full sm:flex-row flex-col h-full">
                 <Item list={[
-                    "Tote Bags",
-                    "Business Cards",
+                    "Wedding Cards",
+                    "Hospitality – Hotels",
                     "T-shirts"
                 ]} title="Popular in 2024" bg={false} back={Texture} />
                 <Item list={[

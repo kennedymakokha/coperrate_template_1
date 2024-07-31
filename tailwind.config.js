@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      // poppins: ["Poppins", "sans-serif"],
+      oswald: ["Causten-Round", "sans-serif"],
+    },
     extend: {
+     
       colors: {
         primary: {
           DEFAULT: '#65A694',

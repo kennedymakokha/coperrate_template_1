@@ -67,7 +67,7 @@ function Projects() {
   let data = active === "" ? ProjectsArray : ProjectsArray.filter((obj: any) => obj.category === active)
   return (
     <div className="w-full flex-col mb-5">
-      <Banner img="" scale={true} title="OUR PROJECTS" desc="Browse Our Diverse Portfolio of Successful Printing Projects" />
+      <Banner img="" scale={true} title="OUR PROJECTS" desc="Browse Our Diverse Portfolio of Successful Printing Projects" height={""} more={""} left={false} />
       <div className="flex w-full flex-col   sm:px-24 ">
         <Tab data={tabs} setTabs={setTabs} onChange={handleTab} />
         <div className="flex w-full   gap-2 flex-wrap">

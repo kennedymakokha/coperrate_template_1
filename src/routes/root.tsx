@@ -9,7 +9,7 @@ export default function Root() {
     return (
         // <Navbar />
 
-        <div className={` w-full  dark  overflow-hidden`}>
+        <div style={{ fontFamily: "Causten-Round" }} className={` w-full  dark  overflow-hidden`}>
             {/* <Header dark={isDark} handleDarkToggle={() => setIsDark(!isDark)} /> */}
             <Navbar />
             <div className={`flex bg-blackmode-100 dark:bg-slate-200 `} >
@@ -17,6 +17,7 @@ export default function Root() {
                     <Outlet />
                 </div>
             </div>
+            {/* <Stats /> */}
             <Subscribe />
             <Footer />
         </div>

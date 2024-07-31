@@ -4,7 +4,7 @@ import Banner from "./banner"
 function Contacts() {
   return (
     <div className="flex h-full w-full flex-col  sm:px-24 ">
-      <Banner img="" scale={true} title="Get In Touch " desc="Get I Touch" />
+      <Banner img="" scale={true} title="Get In Touch " desc="Get I Touch" height={""} more={""} left={false} />
       <div className="flex h-full w-full sm:flex-row flex-col  ">
         <div className="flex h-full sm:w-1/2 w-full items-center sm:justify-center">
           <div className="flex h-3/4 sm:w-[90%] w-full flex-col  rounded-md  ">
