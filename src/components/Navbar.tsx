@@ -46,7 +46,7 @@ const Navbar = () => {
                         <img src={img} alt="" className={`w-full  ${path === item.url ? "flex h-6 rounded-md border border-slate-900" : "hidden"}  object-cover`} />
                         <div className="absolute inset-0 flex justify-center items-center z-10">
 
-                            <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-secondary-100   " : "text-slate-200 dark:text-black hover:text-black"}  `}>{item.text} </Link>
+                            <Link to={`/${item.url}`} className={`font-bold tracking-wide capitalize  ${path === item.url ? "text-secondary-100   " : "text-slate-200 dark:text-white hover:text-black"}  `}>{item.text} </Link>
 
                         </div>
 

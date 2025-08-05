@@ -4,6 +4,7 @@ import Tshirt from './../../assets/images/pointex/T-Shirt.png'
 import Card from './../../assets/images/pointex/businesscard.jpg'
 import Dem from './../../assets/images/pointex/dem1.png'
 import Bg from './../../assets/images/pointex/WhatsApp Image 2024-07-25 at 23.20.24.jpeg'
+import { useNavigate } from "react-router-dom"
 
 const index = () => {
     type Props = {
@@ -13,9 +14,15 @@ const index = () => {
         const { title, onclick, outline } = props
         console.log(onclick)
         return (
-            <div className={`flex shadow-3xl ${outline ? "border border-secondary-100 hover:bg-slate-200 hover:text-secondary-100 sm:text-black text-white" : "sm:text-white text-black bg-secondary-100  hover:bg-black hover:text-secondary-100"} px-4 py-2 font-bold sm:text-[14px] text-[10px]  rounded-md`}>{title}</div>
+            <div onClick={onclick} className={`flex shadow-3xl ${outline ? "border border-secondary-100 hover:bg-slate-200 hover:text-secondary-100 sm:text-slate-400 text-white" : "sm:text-white text-black bg-secondary-100  hover:bg-black hover:text-secondary-100"} px-4 py-2 font-bold sm:text-[14px] text-[10px]  rounded-md`}>{title}</div>
         )
     }
+
+    
+
+    const handleButtonClick = () => {
+        window.location.href = 'https://tonny.pointexsolutions.com/';// Specify the path to the desired page
+    };
     return (
         <div className="flex lg:h-[60vh]   h-auto sm:flex-row flex-col w-full lg:px-24">
             <div className="flex h-auto sm:w-3/4 sm:px-3 w-full ">
@@ -45,7 +52,7 @@ const index = () => {
                         <p className="sm:text-black text-white">Bring Your Ideas to Life with High-Quality Prints</p>
                         <div className="flex gap-x-3">
                             <Button title="Get Started" onclick={undefined} outline={false} />
-                            <Button title="Read more" onclick={undefined} outline={true} />
+                            <Button title="My Profile" onclick={() => handleButtonClick()} outline={true} />
                             <div className={`flex shadow-3xl bg-secondary-100 rounded-md`}></div>
                         </div>
 
