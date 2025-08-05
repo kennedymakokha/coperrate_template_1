@@ -4,7 +4,7 @@ import Tshirt from './../../assets/images/pointex/T-Shirt.png'
 import Card from './../../assets/images/pointex/businesscard.jpg'
 import Dem from './../../assets/images/pointex/dem1.png'
 import Bg from './../../assets/images/pointex/WhatsApp Image 2024-07-25 at 23.20.24.jpeg'
-import { useNavigate } from "react-router-dom"
+
 
 const index = () => {
     type Props = {
